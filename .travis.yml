@@ -5,4 +5,4 @@ arch: arm64
 
 script: 
   - g++ main.cpp -std=c++17 -o travis_gcc_cpp17 
-  - ./travis_gcc_cpp17 < answer.txt
+  - ./travis_gcc_cpp17 < 50
