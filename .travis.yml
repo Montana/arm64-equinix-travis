@@ -1,8 +1,7 @@
 language: cpp
 dist: focal
 compiler: gcc
-arch: arm64 
-
-script: 
-  - g++ main.cpp -std=c++17 -o travis_gcc_cpp17 
-  - ./travis_gcc_cpp17 < answer.txt
+arch: arm64 # (Arm64 v8 via Equinix Metal)
+script:
+  - g++ main.cpp -std=c++17 -o travis_gcc_cpp17
+  - ./travis_gcc_cpp17 < answer.txt # Connect answer.txt to avoid prompt freezing 
