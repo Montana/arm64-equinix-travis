@@ -1,4 +1,5 @@
 language: cpp
+os: linux
 dist: focal
 compiler: gcc
 arch: arm64 # (Arm64 v8 via Equinix Metal)
